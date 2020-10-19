@@ -1,3 +1,7 @@
+/* ================ */
+/* ===== TAGS ===== */
+/* ================ */
+
 body {
     margin: 0;
 }
@@ -6,21 +10,6 @@ header {
     background-color: #003262;
     display: flex;
     justify-content: space-between;
-}
-
-#left-nav {
-    color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#right-nav {
-    color: yellow;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 ul {
@@ -37,6 +26,12 @@ a {
     text-decoration: none;
 }
 
+/* This organization can change once we have certain styles in multiple pages. */
+
+/* ======================== */
+/* ===== LANDING PAGE ===== */
+/* ======================== */
+
 #lp-back {
     height: 100vh;
     background-image: linear-gradient(rgba(252, 218, 183, 0),  rgba(252, 218, 183, 1));
@@ -50,10 +45,6 @@ a {
     justify-content: center;
     align-items: center;
     font-family: 'Ribeye Marrow', cursive;
-}
-
-#cal-pic {
-    size: 
 }
 
 #welcome {
@@ -70,6 +61,24 @@ a {
     font-weight: bold;
     border-radius: 0.75rem;
     box-shadow: 0px 3px 0px #003262;
+}
+
+/* ===================== */
+/* ===== MAIN PAGE ===== */
+/* ===================== */
+
+#left-nav {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-nav {
+    color: yellow;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-btn {
