@@ -38,7 +38,25 @@ a {
     background-image: linear-gradient(rgba(252, 218, 183, 0),  rgba(252, 218, 183, 1));
 }
 
+#signin-bg {
+    height: 100vh;
+    background-image: url("../images/memorial-stadium.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
 #land-page {
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ribeye Marrow', cursive;
+}
+
+#signin-page {
     height: 90vh;
     margin: 0;
     display: flex;
@@ -50,6 +68,12 @@ a {
 
 #welcome {
     font-size: 52px;
+}
+
+#sign-in {
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
 }
 
 .land-btn {
@@ -184,4 +208,36 @@ a {
 }
 
 .dropdown:hover .dropdown-content {display: block;}
- */
+*/
+#login-form {
+    align-self: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .login-form-field::placeholder {
+    color: #3a3a3a;
+  }
+  
+  .login-field {
+    border: none;
+    border-bottom: 1px solid #bbb6b6;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  #login-submission {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+ 
