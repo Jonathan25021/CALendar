@@ -8,9 +8,9 @@
         <header>
             <div id="left-nav">
                 <!--Left side of header: logo-->
-                <div>logo</div>
+                <div></div>
                 <!--Middle of header: maybe search bar?-->
-                <div>middle</div>
+                <div></div>
             </div>
             <div id="right-nav">
                 <!--Right of header: nav-->
@@ -18,27 +18,46 @@
                     <ul>
                         <li><button class="nav-btn"><a href="#">To Do List</a></button></li>
                         <li><button class="nav-btn"><a href="#">CALendar</a></button></li>
-                        <li class="dropdown">
-                            <button class="dropdown-btn">
-                                [Icon]
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">Account</a>
-                                <a href="#">Settings</a>
-                                <a href="#">Ect.</a>
+                        <!--drop down button for account settings, ect.-->
+                        <div class="dropdown">
+                            <button onclick="dropdownClick()" class="dropbtn">UI</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Account</a>
+                              <a href="#">Settings</a>
+                              <a href="#">More Stuff</a>
                             </div>
-                        </li>
+                          </div>
                     </ul>
                 </div>
-                <!--drop down button for account settings, ect.-->
+                
                 
             </div>
             
             
         </header>
-        <!--Main body-->
+        <!--Main body, where the calendar goes-->
         <div></div>
         <!--footer-->
         <footer></footer>
+
+
+        <script>
+            function dropdownClick() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>

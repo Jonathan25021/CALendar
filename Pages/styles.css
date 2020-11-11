@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", "Monaco", "Bitstream Vera Sans Mono", monospace;
 }
 
 header {
@@ -75,26 +76,71 @@ a {
 }
 
 #right-nav {
-    color: yellow;
+    color: #FDB515;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
 }
 
 .nav-btn {
     background-color: #FDB515;
     border-radius: 25px;
-    padding: 10px 15px 10px 15px;
+    padding: 0;
     width: 150px;
     height: 50px;
+    color: #003262;
 }
 
 .nav-btn a {
-    
     text-align: center;
     font-size: 20px;
 }
 
+.dropbtn {
+    background-color: #f7f7f7;
+    color: #FDB515;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #b8b8b8;
+}
+  
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {display: block;}
+/*
 .dropdown {
     position: relative;
     display: inline-block;
@@ -138,4 +184,4 @@ a {
 }
 
 .dropdown:hover .dropdown-content {display: block;}
- 
+ */
