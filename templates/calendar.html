@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <title>CALendar</title>
+    </head>
+    <body>
+        <header>
+            <div id="left-nav">
+                <!--Left side of header: logo-->
+                <div>CALendar</div>
+                <!--Middle of header: maybe search bar?-->
+                <div></div>
+            </div>
+            <div id="right-nav">
+                <!--Right of header: nav-->
+                <div>
+                    <ul>
+                        <li><button class="nav-btn"><a href="toDoList">To Do List</a></button></li>
+                        <li><button class="nav-btn"><a href="#">Calendar</a></button></li>
+                        <!--drop down button for account settings, ect.-->
+                        <div class="dropdown">
+                            <button onclick="dropdownClick()" class="dropbtn">UI</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="accountInfo">Account</a>
+                              <a href="settings">Settings</a>
+                              <a href="#">More Stuff</a>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            
+        </header>
+        <!--Main body, where the calendar goes-->
+        <div></div>
+        <!--footer-->
+        <footer></footer>
+
+
+        <script>
+            function dropdownClick() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

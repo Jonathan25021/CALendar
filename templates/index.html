@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<meta charset="utf-8">
+	<title> Landing Page </title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap"
+	rel="stylesheet">
+  
+	<!-- For responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+	<div id="lp-back">
+		<div id="land-page">
+			<div>
+				<img id="cal-pic" src="{{url_for('static', filename='images/logo.png')}}" />
+			</div>
+			<div>
+				<h1 id="welcome">Welcome to CALendar</h1>
+			</div>
+			<div>
+				<!--button to sign up, button to sign up, sign in-->
+				<button class="land-btn">
+					Log In
+				</button>
+				<button class="land-btn">
+					Sign Up
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
