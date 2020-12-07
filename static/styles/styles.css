@@ -68,7 +68,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Ribeye Marrow', cursive;
 }
 
 #welcome {
@@ -105,7 +104,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-left: 30px;
-    font-family: 'Ribeye Marrow', cursive;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", "Monaco", "Bitstream Vera Sans Mono", monospace;
     font-size: 50px;
 }
 
